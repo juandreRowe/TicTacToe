@@ -1,0 +1,112 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "top top top top top"
+        "left 1 2 3 right"
+        "left 4 5 6 right"
+        "left 7 8 9 right"
+        "bottom bottom bottom bottom bottom";
+    grid-gap: 0.2rem;
+}
+
+#top{
+    grid-area: top;
+    text-align: center;
+}
+
+#whosTurn{
+    font-size: 32px;
+    margin: 3rem;
+    color: Black;
+}
+
+#left {
+    grid-area: left;
+}
+
+#bottom {
+    grid-area: bottom;
+    text-align: center;
+}
+
+#restart{
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 22px;
+}
+
+#right {
+    grid-area: right;
+}
+
+.sides{
+    background-color: white;
+}
+
+#1{
+    grid-area: 1;
+}
+
+#2 {
+    grid-area: 2;
+}
+
+#3 {
+    grid-area: 3;
+}
+
+#4 {
+    grid-area: 4;
+}
+
+#5 {
+    grid-area: 5;
+}
+
+#6 {
+    grid-area: 6;
+}
+
+#7 {
+    grid-area: 7;
+}
+
+#8 {
+    grid-area: 8;
+}
+
+#9 {
+    grid-area: 9;
+}
+
+.gridBlock{
+    border: 1px solid black;
+    transition: 0.1s;
+}
+
+.gridBlock:hover{
+    background-color: gold;
+}
+
+.greenBlock{
+    background-color: green;
+}
+
+.greenBlock:hover{
+    background-color: green;
+}
+
+.redBlock{
+    background-color: red;
+}
+
+.redBlock:hover {
+    background-color: red;
+}
